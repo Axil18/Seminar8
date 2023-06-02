@@ -22,15 +22,18 @@ def error():
     )
 
 
-def show_contacts(date: list):
-    return None
+def show_contacts(data):
+    return data
 
 
-def success(res):
-    return None
+def success():
+    print(
+        'Успешно'
+    )
+    
 
 
-def not_success(res):
+def not_success():
     return None
 
 

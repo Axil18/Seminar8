@@ -6,17 +6,17 @@ def start():
         view.menu()
         answer = input('Введите команду: ')
         if answer == '1':
-            date = model.data()
+            date = model.show_contacts()
             view.show_contacts(date)
         elif answer == '2':
             contact = input('Введите данные контакта через пробел: ')
             res = model.add_contact(contact)
             if res:
-                view.success(res)
+                view.success()
             else:
-                view.not_success(res)
+                view.not_success()
         elif answer == '3':
-            contact = input('Введите данные контакта для поиска: ')
+            contact = model.find_contact
             res = model.find_contact(contact)
             view.show_contacts(res)
         elif answer == '4':

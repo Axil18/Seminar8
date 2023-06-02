@@ -1,7 +1,8 @@
 import view
+
 textfile = open("file.txt", "w+")
 
-def data():
+def show_contacts():
     with open('file.txt', 'r', encoding='utf-8') as file:
         data = file.read().split('\n')[:-1]
         
@@ -44,16 +45,6 @@ def change_phone_number(contact):
       view.success()
     else:
       view.not_success()
-
-
-
-
-
-
-
-
-
-
 
 
 def delete_contact(contact):
